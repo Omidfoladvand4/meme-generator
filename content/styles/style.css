@@ -25,7 +25,7 @@ main{
   box-shadow: 10px 3px 15px 2px rgba(0, 0, 0, 0.8);
   overflow: hidden;
   border-radius: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .meme-image{
     height: 90vh;
@@ -73,10 +73,42 @@ main{
     height: 50px;
     padding: 10px;
 }
+.meme-editor > div > input:focus{
+    background-color: gray;
+    color: wheat;
+    font-size: larger;
+}
 
-.meme-editor > div > .pick-color > input{
-    width: 50px;
-    height: 60x;
+ .pick-color{
+    padding: 25px 25px;
+    background-color: wheat;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pick-size{
+    padding: 15px 15px;
+     background-color: grey;
+     color: wheat;
+    cursor: pointer;
+    font-weight: 900;
 }
 
 
+.btns{
+    width: 700px;
+}
+.btns button{
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px wheat;
+    color: gray;
+    font-weight: 900;
+    margin-left: 30px ;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btns button:hover{
+    box-shadow: 0px 0px 5px 1px wheat;
+    transform: scale(0.9);
+
+}
